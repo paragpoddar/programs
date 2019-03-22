@@ -1,5 +1,7 @@
 /**
  * 
+ * https://www.geeksforgeeks.org/make-all-numbers-of-an-array-equal/
+ * 
  * Make all numbers of an array equal
  * 
  * Given an array arr[], the task is to make all the array elements equal with the given operation. 
