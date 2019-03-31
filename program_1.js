@@ -14,9 +14,9 @@ const s = 'India is a great country and I will work towards making our country t
 
 function main() {
     const splittedS = s.split(' ');
-    const elementsWithFrequencyArr = getElementsWithFrequency(splittedS);
-    console.log('elementsWithFrequencyArr \n', elementsWithFrequencyArr);
-    const filteredArray = removeSecondDuplicateInArray(elementsWithFrequencyArr)
+    const elementsWithFrequencyAndLengthAndPos = getElementsWithFrequencyAndLengthAndPos(splittedS);
+    console.log('elementsWithFrequencyAndLengthAndPos \n', elementsWithFrequencyAndLengthAndPos);
+    const filteredArray = removeSecondDuplicateInArray(elementsWithFrequencyAndLengthAndPos)
     console.log('filteredArray \n', filteredArray);
     const sortedArray = sortByFrequencyAndLengthAndPos(filteredArray);
     console.log('sortedArray \n', sortedArray);
@@ -26,7 +26,7 @@ function main() {
 main()
 
 
-function getElementsWithFrequency(arr) {
+function getElementsWithFrequencyAndLengthAndPos(arr) {
     const elementsWithFrequency = [];
     for (let i = 0; i < arr.length; i++) {
         const count = countOfPresenceOfElementInArray(i, arr[i], arr, arr.length);
