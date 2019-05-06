@@ -42,7 +42,6 @@ function diagonalDifference(arr) {
     i = 0;
     j = rowLength - 1;
     while (i < colLength && j >= 0) {
-        console.log(i, '', j)
         sum2 += arr[i][j];
         i++;
         j--;
